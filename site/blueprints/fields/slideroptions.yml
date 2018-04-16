@@ -1,0 +1,15 @@
+type: group
+fields:
+  sliderpage:
+    label: Eigener Slider
+    type: select
+    options: query
+    query:
+      template: images
+    width: 1/2
+
+  slideroff:
+    label: Slider ausschalten?
+    type: checkbox
+    text: ja
+    width: 1/2
