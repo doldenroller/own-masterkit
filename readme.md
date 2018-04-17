@@ -13,6 +13,7 @@ tool for your next project.
 
 You can purchase your Kirby license at
 <http://getkirby.com/buy>
+it is worth it
 
 A Kirby license is valid for a single domain. You can find 
 Kirby's license agreement here: <http://getkirby.com/license>
