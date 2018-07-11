@@ -13,7 +13,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <?php foreach($pages->index() as $p): ?>
   <?php if(in_array($p->uri(), $ignore)) continue ?>
-  <?php if(in_array($p->template(), $templateignore)) continue ?>
+  <?php if(in_array($p->intendedTemplate(), $templateignore)) continue ?>
   <url>
     <loc><?php echo html($p->url()) ?></loc>
     <lastmod><?php echo $p->modified('c') ?></lastmod>
