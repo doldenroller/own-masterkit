@@ -4,7 +4,7 @@
 <div class="wrapper">
 
 <div class="legal clearfix"><?php echo $site->copyright()->kirbytext() ?></div>
-<div class="adress clearfix"><?php echo $site->address()->kirbytext() ?></div>
+<div class="address clearfix"><?php echo $site->address()->kirbytext() ?></div>
 
 </div>
 </footer>
