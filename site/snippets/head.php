@@ -23,7 +23,7 @@
 <link rel="manifest" href="<?= url('assets/images/favicons/site.webmanifest') // kompatibilität checken... evtl prob mit alten androids ?>">
 
 <link rel="mask-icon" href="<?= url('assets/images/favicons/safari-pinned-tab.svg') ?>" color="#5bbad5">
-<link rel="shortcut icon" href="<?= $site->url('assets/images/favicons/favicon.ico') ?>">
+<link rel="shortcut icon" href="<?= url('assets/images/favicons/favicon.ico') ?>">
 <meta name="msapplication-config" content="<?= url('assets/images/favicons/browserconfig.xml') ?>">
 <meta name="theme-color" content="#ffffff">
 
@@ -41,5 +41,6 @@
 </script>
 
 <?= js('https://code.jquery.com/jquery-2.2.4.min.js', ['integrity' => 'sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=', 'crossorigin' => 'anonymous']) ?>
+</head>
 
 <body id="top">
