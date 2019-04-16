@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { border:0; font-size:100%; margin:0; padding:0; }
+a { outline:none; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+del,ins { text-decoration:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; font-variant:normal; }
+sup,sub { vertical-align:baseline; }
+legend { color:#000; }
+input,button,textarea,select,optgroup,option { font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit; }
+input,button,textarea,select { font-size:100%; }
+
+/* Clearfix */
+.clearfix:before, .clearfix:after {content: " "; display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
+
+*, *:before, *:after {padding: 0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box;}
+figure, figure:before, figure:after {padding: 0; margin: 0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box;}
+
+body {margin:0;}
+
+/***************************** FORMAT *****************************/
+h1 {font-size: 1.75em;}
+h2 {font-size: 1.75em; margin-top: 1.25em;}
+h3 {font-size: 1.375em; margin-bottom: 0.25em;}
+h4 {font-size: 1.375em; margin-bottom: 0.25em; margin-top: 1.25em;}
+h5 {font-size: 1.25em; margin-bottom: 0.25em;}
+h6 {font-size: 1.25em; margin-bottom: 0.25em; margin-top: 1em;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: inherit; border: 0 !important; text-decoration: none;}
+
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {margin-top: 0.75em;}
+hr + h2, hr + h4, hr + h6 {margin-top: 0.75em;}
+
+p {color: rgba(0,0,0,1); line-height: 1.5em;}
+p + p, ul + p, ol + p {margin-top: 0.75rem;}
+p + ul, p + ol {margin-top: 0.25rem;}
+blockquote p, .big {font-size: 1.125em;}
+
+ul {list-style-type: none;}
+ul li {padding: 0 0 0.75rem 0.5rem; line-height: 1.5em; position: relative;}
+ul li:before {content: '\00b7'; position: absolute; left: 0;}
+
+/***************************** LINKS/SPANS *****************************/
+a {text-decoration: none; color: inherit;
+-webkit-transition: color .3s, background .3s, border .3s; transition: color .3s, background .3s, border .3s;}
+a:hover {color: rgba(127,127,127,1);}
+
+a.phone, a.phone:hover {color: rgba(0,0,0,1); cursor: text;}
+
+/***************************** LAYOUT *****************************/
+/* BASIC */
+.wrapper {height: auto; margin: 0 auto; max-width: 64rem;}
+main {display: block;}
+
+figure img {width: 100%; display: block;}
+.stretch-w img {width: 100%; height: auto;}
+.stretch-h img {width: auto; height: 100%;}
+
+/* HEADER */
+header {}
+.logo {width: 3rem;}
+
+/* NAVI */
+nav ul {list-style-type: none;}
+nav ul li {line-height: 1em;}
+nav ul li:before {content: '';}
+
+#main-nav {width: 100%; min-height: 2.5rem; background: rgba(255,255,255,1); z-index: 1; font-size: 1.25em; text-transform: uppercase;}
+#main-nav ul {width: 100%; height: auto; display: none; padding: 2.5rem 0 0 0;}
+#main-nav ul li {padding: 0; border-top: 1px solid rgba(127,127,127,1);}
+#main-nav ul li:first-of-type {border-top: none;}
+#main-nav ul li a {padding: 1rem; display: block;}
+#main-nav ul li a:hover, #main-nav ul li.active a {color: rgba(50,50,50,1);}
+
+#main-nav.fixed {position: fixed; top: 0;}
+
+/* nav pull */
+a#pull {width: 2.5rem; height: 2.5rem; padding: 0.625rem 0 0.625rem 0.75rem; position: absolute; top: 0; right: 1rem; z-index: 12;}
+
+.burger-wrap {position: relative;}
+
+.burger, .burger:before, .burger:after {width: 1.75rem; height: 0.25rem; display: block; position: absolute; background: rgba(0,0,0,1);
+-webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s;}
+.burger {left: 0; top: 0;}
+.burger:before {top: 0.5rem; content: '';}
+.burger:after {top: 1rem; content: '';}
+
+.open .burger {background: none;}
+.open .burger:before {top: 0.5rem; width: 1.75rem;
+-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); transform: rotate(45deg);}
+.open .burger:after {top: 0.5rem; width: 1.75rem;
+-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); transform: rotate(-45deg);}
+
+/* SLIDER */
+.headslider figure {padding-bottom: 50%;}
+.headslider img {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%);}
+
+/* FOOTER */
+footer {}
+
+/* back top*/
+.arrow:before, .arrow:after {width: 0.125rem; height: 1rem; content: ''; position: absolute; display: block; background: rgba(255,255,255,1);}
+
+.arrow:before, .arrow:after {top: 0;}
+
+.arrow:before {transform: rotate(45deg); -webkit-transform: rotate(45deg);}
+.arrow:after {transform: rotate(-45deg); -webkit-transform: rotate(-45deg);}
+
+.arrow:before {left: 0.625rem;}
+.arrow:after {right: 0.625rem;}
+
+#back-top {width: 2.5rem; height: 2.5rem; position: fixed; right: 1rem; bottom: 1rem; display: block; z-index: 100;}
+#back-top a, #back-top a:active {width: 2.5rem; height: 2.5rem; display: block; padding: 0.625rem 0.25rem; background: rgba(0,0,0,0.3); border-radius: 50%; -webkit-border-radius: 50%; transition: background 0.3s; -webkit-transition: background 0.3s;}
+#back-top a:hover {background: rgba(0,0,0,1);}
+#back-top .arrow {width: 2rem; height: 1.25rem; position: relative;}
+
+#back-top a:hover .arrow {animation: pulse 0.5s 1;}
+
+@-webkit-keyframes pulse {
+0%, 100% {transform: scale(1);}
+50% {transform: scale(1.1);}
+}
+@-moz-keyframes pulse {
+0%, 100% {transform: scale(1);}
+50% {transform: scale(1.1);}
+}
+@keyframes pulse {
+0%, 100% {transform: scale(1);}
+50% {transform: scale(1.1);}
+}
+
+/* responsiveness
+--------------------------------------------- */
+
+/* medium */
+@media screen and (min-width:48em) {
+
+/***************************** LAYOUT *****************************/
+/* BASIC */
+.wrapper {max-width: 44rem;}
+}
+
+/* large */
+@media screen and (min-width:64em) {
+
+/***************************** LAYOUT *****************************/
+/* BASIC */
+.wrapper {max-width: 60rem;}
+
+/* NAVI */
+#main-nav ul {display: block; text-align: center; padding: 0;}
+#main-nav ul li {display: inline-block; border-top: none;}
+
+/* nav pull */
+a#pull {display: none;}
+}
+
+@media screen and (min-width:74em) {
+
+/***************************** LAYOUT *****************************/
+/* BASIC */
+.wrapper {max-width: 70rem;}
+}
+
+@media screen and (min-width:100em) {
+
+}
+
+@media screen and (min-width:120em) {
+body {font-size: 1.2em}
+}
+/* end responsiveness
+--------------------------------------------- */

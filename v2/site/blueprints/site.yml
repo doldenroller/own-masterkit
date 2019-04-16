@@ -1,0 +1,41 @@
+title: Site
+
+pages:
+  template:
+    - default
+    - images
+
+fields:
+  title:
+    label:
+      en: Title
+      de: Titel
+    type: text
+
+  titleline:
+    label: Titleline
+    type:  text
+
+  author:
+    label: Author
+    type:  text
+
+  description:
+    label:
+      en: Description
+      de: Beschreibung
+    type: textarea
+
+  keywords:
+    label: Keywords
+    type:  tags
+    
+  copyright:
+    label: Rechtliches
+    type: textarea
+    width: 1/2
+
+  address:
+    label: Adresse
+    type: textarea
+    width: 1/2
