@@ -1,9 +1,0 @@
-title: Images or Slider
-pages: false
-files: true
-icon: camera
-fields:
-  title:
-    label: Title
-    type:  text
-  imgentries: images
